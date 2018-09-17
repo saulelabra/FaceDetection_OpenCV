@@ -1,0 +1,3 @@
+C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/main.dir
+C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/ZERO_CHECK.dir

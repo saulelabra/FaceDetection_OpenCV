@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\imgLoadnDisp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D3422CB0-9E2C-3369-88D3-4D781E761BC1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
