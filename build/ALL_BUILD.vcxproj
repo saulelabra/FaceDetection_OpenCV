@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{72924943-3354-3D9E-8B63-8CF5B950BCE0}</ProjectGuid>
+    <ProjectGuid>{863C73EC-3D18-3838-B47E-2FFCB06A038C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
@@ -103,12 +103,12 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\ZERO_CHECK.vcxproj">
-      <Project>{1AA9809B-38BE-3E22-907D-E1CCB3695030}</Project>
+    <ProjectReference Include="C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\ZERO_CHECK.vcxproj">
+      <Project>{170053B2-85B9-3EAD-91F7-324BE6DA3FA0}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\main.vcxproj">
-      <Project>{9D3F7EF9-D26E-384A-80A4-5FCC7A40EB0C}</Project>
+    <ProjectReference Include="C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\main.vcxproj">
+      <Project>{CFBD7876-E995-3653-B6C3-498C5342253B}</Project>
       <Name>main</Name>
     </ProjectReference>
   </ItemGroup>

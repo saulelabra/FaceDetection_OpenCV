@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\main.cpp">
+    <ClCompile Include="C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{D3422CB0-9E2C-3369-88D3-4D781E761BC1}</UniqueIdentifier>
+      <UniqueIdentifier>{3F768F8F-2A76-34C8-B870-B352D40743DD}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

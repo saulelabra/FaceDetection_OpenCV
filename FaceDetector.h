@@ -21,7 +21,7 @@ private:
   Point pt1;
   Point pt2;
 
-  //CLAHE variables
+  //CLAHE (Contrast Limited Adaptive Histogram Equalization) variables
   Ptr<CLAHE> clahe;
 
   //detectMultiScale variables
@@ -36,7 +36,7 @@ public:
   FaceDetector()
   {
     scaleFact = 1.1;
-    validNeighbors = 2;
+    validNeighbors = 4;
     minWidth = 10;
     minHeight = 10;
     rectColor.push_back(255);
@@ -44,6 +44,7 @@ public:
     rectColor.push_back(0);
 
     clahe = createCLAHE();
+    clahe->setClipLimit(2);
   }
 
   FaceDetector(string inImg, string inClassifier)
@@ -52,7 +53,7 @@ public:
     picName = inImg;
     face_cascade_name = inClassifier;
     scaleFact = 1.1;
-    validNeighbors = 2;
+    validNeighbors = 4;
     minWidth = 10;
     minHeight = 10;
     rectColor.push_back(255);
@@ -60,7 +61,7 @@ public:
     rectColor.push_back(0);
 
     clahe = createCLAHE();
-    clahe->setClipLimit(4);
+    clahe->setClipLimit(2);
   }
 
   void settingsDetect(double scaleFactIn, int validNeighborsIn, int minWidthIn, int minHeightIn)
@@ -87,7 +88,7 @@ public:
     return;
   }
 
-  void detect()
+  int detect()
   {
     //Loading image and face cascade classifier
     face_cascade.load(face_cascade_name);
@@ -101,33 +102,36 @@ public:
 
       //Detecting faces
       face_cascade.detectMultiScale(imgGray, faces, scaleFact, validNeighbors, 0|CV_HAAR_SCALE_IMAGE, Size(minWidth, minHeight));
+      return 0;
 
     }else{
       cout << "Image or classifier not found: " << picName << "\t" << face_cascade_name << endl;
+      return -1;
     }
-
-    return;
   }
 
   void detectnShow()
   {
-    detect();
-
-    for(size_t i=0; i<faces.size(); i++)
+    if(detect() == 0)
     {
-      //Drawing rectangle on image
-      pt1.x = faces[i].x;
-      pt1.y = faces[i].y;
-      pt2.x = faces[i].x + faces[i].width;
-      pt2.y = faces[i].y + faces[i].height;
+      for(size_t i=0; i<faces.size(); i++)
+      {
+        //Drawing rectangle on image
+        pt1.x = faces[i].x;
+        pt1.y = faces[i].y;
+        pt2.x = faces[i].x + faces[i].width;
+        pt2.y = faces[i].y + faces[i].height;
 
-      rectangle(img, pt1, pt2, Scalar(rectColor[0], rectColor[1], rectColor[2]));
+        rectangle(img, pt1, pt2, Scalar(rectColor[0], rectColor[1], rectColor[2]));
+      }
+      //Display window with image
+      namedWindow("Face Detection", WINDOW_AUTOSIZE);//Generating window
+      namedWindow("Equalized", WINDOW_AUTOSIZE);
+      imshow("Face Detection", img);//Showing image
+      imshow("Equalized", imgGray);
+    }else{
+      return;
     }
-    //Display window with image
-    namedWindow("Face Detection", WINDOW_AUTOSIZE);//Generating window
-    namedWindow("Equalized", WINDOW_AUTOSIZE);
-    imshow("Face Detection", img);//Showing image
-    imshow("Equalized", imgGray);
   }
 
   vector<Rect> detectnReturn()
