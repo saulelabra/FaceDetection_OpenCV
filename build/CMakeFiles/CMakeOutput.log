@@ -9,8 +9,8 @@ The output was:
 Microsoft (R) Build Engine, versi�n 14.0.25420.1
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
-Compilaci�n iniciada a las 17/09/2018 07:04:20 p. m..
-Proyecto "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\3.12.1\CompilerIdC\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+Compilaci�n iniciada a las 10/09/2018 02:46:30 p. m..
+Proyecto "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\3.12.1\CompilerIdC\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
   Creando directorio "Debug\".
   Creando directorio "Debug\CompilerIdC.tlog\".
@@ -21,7 +21,7 @@ ClCompile:
   CMakeCCompilerId.c
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\3.12.1\CompilerIdC\.\CompilerIdC.exe
+  CompilerIdC.vcxproj -> C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\3.12.1\CompilerIdC\.\CompilerIdC.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
@@ -29,20 +29,20 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Se eliminar� el archivo "Debug\CompilerIdC.tlog\unsuccessfulbuild".
   Aplicando tarea Touch a "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Compilaci�n del proyecto terminada "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\3.12.1\CompilerIdC\CompilerIdC.vcxproj" (destinos predeterminados).
+Compilaci�n del proyecto terminada "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\3.12.1\CompilerIdC\CompilerIdC.vcxproj" (destinos predeterminados).
 
 Compilaci�n correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:01.76
+Tiempo transcurrido 00:00:01.79
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is MSVC, found in "C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/3.12.1/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is MSVC, found in "C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/3.12.1/CompilerIdC/CompilerIdC.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler:  
@@ -54,8 +54,8 @@ The output was:
 Microsoft (R) Build Engine, versi�n 14.0.25420.1
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
-Compilaci�n iniciada a las 17/09/2018 07:04:22 p. m..
-Proyecto "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\3.12.1\CompilerIdCXX\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+Compilaci�n iniciada a las 10/09/2018 02:46:33 p. m..
+Proyecto "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\3.12.1\CompilerIdCXX\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
   Creando directorio "Debug\".
   Creando directorio "Debug\CompilerIdCXX.tlog\".
@@ -66,7 +66,7 @@ ClCompile:
   CMakeCXXCompilerId.cpp
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\3.12.1\CompilerIdCXX\.\CompilerIdCXX.exe
+  CompilerIdCXX.vcxproj -> C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\3.12.1\CompilerIdCXX\.\CompilerIdCXX.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
@@ -74,259 +74,259 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Se eliminar� el archivo "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
   Aplicando tarea Touch a "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Compilaci�n del proyecto terminada "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\3.12.1\CompilerIdCXX\CompilerIdCXX.vcxproj" (destinos predeterminados).
+Compilaci�n del proyecto terminada "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\3.12.1\CompilerIdCXX\CompilerIdCXX.vcxproj" (destinos predeterminados).
 
 Compilaci�n correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:01.61
+Tiempo transcurrido 00:00:02.02
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/3.12.1/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/3.12.1/CompilerIdCXX/CompilerIdCXX.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_c562d.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_92a3c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine, versión 14.0.25420.1
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
-Compilación iniciada a las 17/09/2018 07:04:24 p. m..
-Proyecto "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_c562d.vcxproj" en nodo 1 (destinos predeterminados).
+Compilación iniciada a las 10/09/2018 02:46:36 p. m..
+Proyecto "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_92a3c.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
-  Creando directorio "cmTC_c562d.dir\Debug\".
-  Creando directorio "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\".
-  Creando directorio "cmTC_c562d.dir\Debug\cmTC_c562d.tlog\".
+  Creando directorio "cmTC_92a3c.dir\Debug\".
+  Creando directorio "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_92a3c.dir\Debug\cmTC_92a3c.tlog\".
 InitializeBuildStatus:
-  Se creará "cmTC_c562d.dir\Debug\cmTC_c562d.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+  Se creará "cmTC_92a3c.dir\Debug\cmTC_92a3c.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c562d.dir\Debug\\" /Fd"cmTC_c562d.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_92a3c.dir\Debug\\" /Fd"cmTC_92a3c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\testCCompiler.c
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c562d.dir\Debug\\" /Fd"cmTC_c562d.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\testCCompiler.c
-  testCCompiler.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_92a3c.dir\Debug\\" /Fd"cmTC_92a3c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\testCCompiler.c
   
+  testCCompiler.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_c562d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_c562d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_c562d.lib" /MACHINE:X64  /machine:x64 cmTC_c562d.dir\Debug\testCCompiler.obj
-  cmTC_c562d.vcxproj -> C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_c562d.exe
-  cmTC_c562d.vcxproj -> C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_c562d.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_92a3c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_92a3c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_92a3c.lib" /MACHINE:X64  /machine:x64 cmTC_92a3c.dir\Debug\testCCompiler.obj
+  cmTC_92a3c.vcxproj -> C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_92a3c.exe
+  cmTC_92a3c.vcxproj -> C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_92a3c.pdb (Full PDB)
 FinalizeBuildStatus:
-  Se eliminará el archivo "cmTC_c562d.dir\Debug\cmTC_c562d.tlog\unsuccessfulbuild".
-  Aplicando tarea Touch a "cmTC_c562d.dir\Debug\cmTC_c562d.tlog\cmTC_c562d.lastbuildstate".
-Compilación del proyecto terminada "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_c562d.vcxproj" (destinos predeterminados).
+  Se eliminará el archivo "cmTC_92a3c.dir\Debug\cmTC_92a3c.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_92a3c.dir\Debug\cmTC_92a3c.tlog\cmTC_92a3c.lastbuildstate".
+Compilación del proyecto terminada "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_92a3c.vcxproj" (destinos predeterminados).
 
 Compilación correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:01.92
+Tiempo transcurrido 00:00:01.68
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_5fdaa.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_1f3bb.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine, versión 14.0.25420.1
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
-Compilación iniciada a las 17/09/2018 07:04:27 p. m..
-Proyecto "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_5fdaa.vcxproj" en nodo 1 (destinos predeterminados).
+Compilación iniciada a las 10/09/2018 02:46:38 p. m..
+Proyecto "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_1f3bb.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
-  Creando directorio "cmTC_5fdaa.dir\Debug\".
-  Creando directorio "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\".
-  Creando directorio "cmTC_5fdaa.dir\Debug\cmTC_5fdaa.tlog\".
+  Creando directorio "cmTC_1f3bb.dir\Debug\".
+  Creando directorio "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_1f3bb.dir\Debug\cmTC_1f3bb.tlog\".
 InitializeBuildStatus:
-  Se creará "cmTC_5fdaa.dir\Debug\cmTC_5fdaa.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+  Se creará "cmTC_1f3bb.dir\Debug\cmTC_1f3bb.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5fdaa.dir\Debug\\" /Fd"cmTC_5fdaa.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1f3bb.dir\Debug\\" /Fd"cmTC_1f3bb.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5fdaa.dir\Debug\\" /Fd"cmTC_5fdaa.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1f3bb.dir\Debug\\" /Fd"cmTC_1f3bb.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
   
   CMakeCCompilerABI.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_5fdaa.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_5fdaa.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_5fdaa.lib" /MACHINE:X64  /machine:x64 cmTC_5fdaa.dir\Debug\CMakeCCompilerABI.obj
-  cmTC_5fdaa.vcxproj -> C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_5fdaa.exe
-  cmTC_5fdaa.vcxproj -> C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_5fdaa.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_1f3bb.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_1f3bb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_1f3bb.lib" /MACHINE:X64  /machine:x64 cmTC_1f3bb.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_1f3bb.vcxproj -> C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_1f3bb.exe
+  cmTC_1f3bb.vcxproj -> C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_1f3bb.pdb (Full PDB)
 FinalizeBuildStatus:
-  Se eliminará el archivo "cmTC_5fdaa.dir\Debug\cmTC_5fdaa.tlog\unsuccessfulbuild".
-  Aplicando tarea Touch a "cmTC_5fdaa.dir\Debug\cmTC_5fdaa.tlog\cmTC_5fdaa.lastbuildstate".
-Compilación del proyecto terminada "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_5fdaa.vcxproj" (destinos predeterminados).
+  Se eliminará el archivo "cmTC_1f3bb.dir\Debug\cmTC_1f3bb.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_1f3bb.dir\Debug\cmTC_1f3bb.tlog\cmTC_1f3bb.lastbuildstate".
+Compilación del proyecto terminada "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_1f3bb.vcxproj" (destinos predeterminados).
 
 Compilación correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:01.66
+Tiempo transcurrido 00:00:01.91
 
 
 
 
 Detecting C [] compiler features compiled with the following output:
-Change Dir: C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_b23df.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_856b7.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine, versión 14.0.25420.1
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
-Compilación iniciada a las 17/09/2018 07:04:29 p. m..
-Proyecto "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_b23df.vcxproj" en nodo 1 (destinos predeterminados).
+Compilación iniciada a las 10/09/2018 02:46:41 p. m..
+Proyecto "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_856b7.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
-  Creando directorio "cmTC_b23df.dir\Debug\".
-  Creando directorio "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\".
-  Creando directorio "cmTC_b23df.dir\Debug\cmTC_b23df.tlog\".
+  Creando directorio "cmTC_856b7.dir\Debug\".
+  Creando directorio "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_856b7.dir\Debug\cmTC_856b7.tlog\".
 InitializeBuildStatus:
-  Se creará "cmTC_b23df.dir\Debug\cmTC_b23df.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+  Se creará "cmTC_856b7.dir\Debug\cmTC_856b7.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b23df.dir\Debug\\" /Fd"cmTC_b23df.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\feature_tests.c
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_856b7.dir\Debug\\" /Fd"cmTC_856b7.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\feature_tests.c
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b23df.dir\Debug\\" /Fd"cmTC_b23df.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\feature_tests.c
-  feature_tests.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_856b7.dir\Debug\\" /Fd"cmTC_856b7.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\feature_tests.c
   
+  feature_tests.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_b23df.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_b23df.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_b23df.lib" /MACHINE:X64  /machine:x64 cmTC_b23df.dir\Debug\feature_tests.obj
-  cmTC_b23df.vcxproj -> C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_b23df.exe
-  cmTC_b23df.vcxproj -> C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_b23df.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_856b7.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_856b7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_856b7.lib" /MACHINE:X64  /machine:x64 cmTC_856b7.dir\Debug\feature_tests.obj
+  cmTC_856b7.vcxproj -> C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_856b7.exe
+  cmTC_856b7.vcxproj -> C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_856b7.pdb (Full PDB)
 FinalizeBuildStatus:
-  Se eliminará el archivo "cmTC_b23df.dir\Debug\cmTC_b23df.tlog\unsuccessfulbuild".
-  Aplicando tarea Touch a "cmTC_b23df.dir\Debug\cmTC_b23df.tlog\cmTC_b23df.lastbuildstate".
-Compilación del proyecto terminada "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_b23df.vcxproj" (destinos predeterminados).
+  Se eliminará el archivo "cmTC_856b7.dir\Debug\cmTC_856b7.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_856b7.dir\Debug\cmTC_856b7.tlog\cmTC_856b7.lastbuildstate".
+Compilación del proyecto terminada "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_856b7.vcxproj" (destinos predeterminados).
 
 Compilación correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:01.65
+Tiempo transcurrido 00:00:01.70
 
 
     Feature record: C_FEATURE:1c_function_prototypes
     Feature record: C_FEATURE:1c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_8a116.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_7da24.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine, versión 14.0.25420.1
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
-Compilación iniciada a las 17/09/2018 07:04:31 p. m..
-Proyecto "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_8a116.vcxproj" en nodo 1 (destinos predeterminados).
+Compilación iniciada a las 10/09/2018 02:46:43 p. m..
+Proyecto "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_7da24.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
-  Creando directorio "cmTC_8a116.dir\Debug\".
-  Creando directorio "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\".
-  Creando directorio "cmTC_8a116.dir\Debug\cmTC_8a116.tlog\".
+  Creando directorio "cmTC_7da24.dir\Debug\".
+  Creando directorio "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_7da24.dir\Debug\cmTC_7da24.tlog\".
 InitializeBuildStatus:
-  Se creará "cmTC_8a116.dir\Debug\cmTC_8a116.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+  Se creará "cmTC_7da24.dir\Debug\cmTC_7da24.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8a116.dir\Debug\\" /Fd"cmTC_8a116.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_7da24.dir\Debug\\" /Fd"cmTC_7da24.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8a116.dir\Debug\\" /Fd"cmTC_8a116.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_7da24.dir\Debug\\" /Fd"cmTC_7da24.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
   
   testCXXCompiler.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_8a116.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_8a116.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_8a116.lib" /MACHINE:X64  /machine:x64 cmTC_8a116.dir\Debug\testCXXCompiler.obj
-  cmTC_8a116.vcxproj -> C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_8a116.exe
-  cmTC_8a116.vcxproj -> C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_8a116.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_7da24.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_7da24.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_7da24.lib" /MACHINE:X64  /machine:x64 cmTC_7da24.dir\Debug\testCXXCompiler.obj
+  cmTC_7da24.vcxproj -> C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_7da24.exe
+  cmTC_7da24.vcxproj -> C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_7da24.pdb (Full PDB)
 FinalizeBuildStatus:
-  Se eliminará el archivo "cmTC_8a116.dir\Debug\cmTC_8a116.tlog\unsuccessfulbuild".
-  Aplicando tarea Touch a "cmTC_8a116.dir\Debug\cmTC_8a116.tlog\cmTC_8a116.lastbuildstate".
-Compilación del proyecto terminada "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_8a116.vcxproj" (destinos predeterminados).
+  Se eliminará el archivo "cmTC_7da24.dir\Debug\cmTC_7da24.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_7da24.dir\Debug\cmTC_7da24.tlog\cmTC_7da24.lastbuildstate".
+Compilación del proyecto terminada "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_7da24.vcxproj" (destinos predeterminados).
 
 Compilación correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:01.85
+Tiempo transcurrido 00:00:01.20
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_1157a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_767b4.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine, versión 14.0.25420.1
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
-Compilación iniciada a las 17/09/2018 07:04:34 p. m..
-Proyecto "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_1157a.vcxproj" en nodo 1 (destinos predeterminados).
+Compilación iniciada a las 10/09/2018 02:46:45 p. m..
+Proyecto "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_767b4.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
-  Creando directorio "cmTC_1157a.dir\Debug\".
-  Creando directorio "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\".
-  Creando directorio "cmTC_1157a.dir\Debug\cmTC_1157a.tlog\".
+  Creando directorio "cmTC_767b4.dir\Debug\".
+  Creando directorio "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_767b4.dir\Debug\cmTC_767b4.tlog\".
 InitializeBuildStatus:
-  Se creará "cmTC_1157a.dir\Debug\cmTC_1157a.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+  Se creará "cmTC_767b4.dir\Debug\cmTC_767b4.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1157a.dir\Debug\\" /Fd"cmTC_1157a.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_767b4.dir\Debug\\" /Fd"cmTC_767b4.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1157a.dir\Debug\\" /Fd"cmTC_1157a.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
-  CMakeCXXCompilerABI.cpp
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_767b4.dir\Debug\\" /Fd"cmTC_767b4.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
   
+  CMakeCXXCompilerABI.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_1157a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_1157a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_1157a.lib" /MACHINE:X64  /machine:x64 cmTC_1157a.dir\Debug\CMakeCXXCompilerABI.obj
-  cmTC_1157a.vcxproj -> C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_1157a.exe
-  cmTC_1157a.vcxproj -> C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_1157a.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_767b4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_767b4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_767b4.lib" /MACHINE:X64  /machine:x64 cmTC_767b4.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_767b4.vcxproj -> C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_767b4.exe
+  cmTC_767b4.vcxproj -> C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_767b4.pdb (Full PDB)
 FinalizeBuildStatus:
-  Se eliminará el archivo "cmTC_1157a.dir\Debug\cmTC_1157a.tlog\unsuccessfulbuild".
-  Aplicando tarea Touch a "cmTC_1157a.dir\Debug\cmTC_1157a.tlog\cmTC_1157a.lastbuildstate".
-Compilación del proyecto terminada "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_1157a.vcxproj" (destinos predeterminados).
+  Se eliminará el archivo "cmTC_767b4.dir\Debug\cmTC_767b4.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_767b4.dir\Debug\cmTC_767b4.tlog\cmTC_767b4.lastbuildstate".
+Compilación del proyecto terminada "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_767b4.vcxproj" (destinos predeterminados).
 
 Compilación correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:01.65
+Tiempo transcurrido 00:00:02.42
 
 
 
 
 Detecting CXX [] compiler features compiled with the following output:
-Change Dir: C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_3512d.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_e3926.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine, versión 14.0.25420.1
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
 
-Compilación iniciada a las 17/09/2018 07:04:36 p. m..
-Proyecto "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_3512d.vcxproj" en nodo 1 (destinos predeterminados).
+Compilación iniciada a las 10/09/2018 02:46:49 p. m..
+Proyecto "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_e3926.vcxproj" en nodo 1 (destinos predeterminados).
 PrepareForBuild:
-  Creando directorio "cmTC_3512d.dir\Debug\".
-  Creando directorio "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\".
-  Creando directorio "cmTC_3512d.dir\Debug\cmTC_3512d.tlog\".
+  Creando directorio "cmTC_e3926.dir\Debug\".
+  Creando directorio "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_e3926.dir\Debug\cmTC_e3926.tlog\".
 InitializeBuildStatus:
-  Se creará "cmTC_3512d.dir\Debug\cmTC_3512d.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+  Se creará "cmTC_e3926.dir\Debug\cmTC_e3926.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3512d.dir\Debug\\" /Fd"cmTC_3512d.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\feature_tests.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e3926.dir\Debug\\" /Fd"cmTC_e3926.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\feature_tests.cxx
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3512d.dir\Debug\\" /Fd"cmTC_3512d.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\feature_tests.cxx
-  feature_tests.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e3926.dir\Debug\\" /Fd"cmTC_e3926.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\feature_tests.cxx
   
+  feature_tests.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_3512d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_3512d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_3512d.lib" /MACHINE:X64  /machine:x64 cmTC_3512d.dir\Debug\feature_tests.obj
-  cmTC_3512d.vcxproj -> C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\Debug\cmTC_3512d.exe
-  cmTC_3512d.vcxproj -> C:/Users/quiqu/Documents/gitHub/FaceDetection_OpenCV/build/CMakeFiles/CMakeTmp/Debug/cmTC_3512d.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_e3926.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_e3926.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_e3926.lib" /MACHINE:X64  /machine:x64 cmTC_e3926.dir\Debug\feature_tests.obj
+  cmTC_e3926.vcxproj -> C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\Debug\cmTC_e3926.exe
+  cmTC_e3926.vcxproj -> C:/Users/quiqu/Downloads/OpenCV_pruebas/imgLoadnDisp/build/CMakeFiles/CMakeTmp/Debug/cmTC_e3926.pdb (Full PDB)
 FinalizeBuildStatus:
-  Se eliminará el archivo "cmTC_3512d.dir\Debug\cmTC_3512d.tlog\unsuccessfulbuild".
-  Aplicando tarea Touch a "cmTC_3512d.dir\Debug\cmTC_3512d.tlog\cmTC_3512d.lastbuildstate".
-Compilación del proyecto terminada "C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\CMakeFiles\CMakeTmp\cmTC_3512d.vcxproj" (destinos predeterminados).
+  Se eliminará el archivo "cmTC_e3926.dir\Debug\cmTC_e3926.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_e3926.dir\Debug\cmTC_e3926.tlog\cmTC_e3926.lastbuildstate".
+Compilación del proyecto terminada "C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\CMakeFiles\CMakeTmp\cmTC_e3926.vcxproj" (destinos predeterminados).
 
 Compilación correcta.
     0 Advertencia(s)
     0 Errores
 
-Tiempo transcurrido 00:00:01.69
+Tiempo transcurrido 00:00:02.10
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

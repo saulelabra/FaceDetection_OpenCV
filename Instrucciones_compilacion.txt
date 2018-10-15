@@ -1,0 +1,8 @@
+Compile:
+
+	cmake --build . --config Release
+
+Execute:
+	
+	cd ..
+	.\build\Release\main2.exe

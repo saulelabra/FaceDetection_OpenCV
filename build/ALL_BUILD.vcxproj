@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{863C73EC-3D18-3838-B47E-2FFCB06A038C}</ProjectGuid>
+    <ProjectGuid>{72924943-3354-3D9E-8B63-8CF5B950BCE0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
@@ -103,13 +103,13 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\ZERO_CHECK.vcxproj">
-      <Project>{170053B2-85B9-3EAD-91F7-324BE6DA3FA0}</Project>
+    <ProjectReference Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\ZERO_CHECK.vcxproj">
+      <Project>{1AA9809B-38BE-3E22-907D-E1CCB3695030}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\quiqu\Documents\gitHub\FaceDetection_OpenCV\build\main.vcxproj">
-      <Project>{CFBD7876-E995-3653-B6C3-498C5342253B}</Project>
-      <Name>main</Name>
+    <ProjectReference Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\main2.vcxproj">
+      <Project>{DF54BD89-81BD-39EA-8774-4E1E2705C3AD}</Project>
+      <Name>main2</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
