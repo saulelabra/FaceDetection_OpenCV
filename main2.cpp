@@ -36,7 +36,12 @@ int main()
 
   //Input the image as pointer to Mat
   img = imread(imgName, 1);
-  detector.detectnShow(&img);
+  cout << "Se guardó la imagen en el Mat (main)" << endl;
 
+  vector<Rect> detected_faces = detector.detect_faces(&img);
+
+  cout << "Se detectaron las caras y se regresó el vector" << endl;
+
+  detector.detect_faces_show(&img);
   return 0;
 };

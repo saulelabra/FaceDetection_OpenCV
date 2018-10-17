@@ -5,4 +5,4 @@ Compile:
 Execute:
 	
 	cd ..
-	.\build\Release\main2.exe
+	.\build\Release\main.exe
