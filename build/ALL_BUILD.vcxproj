@@ -107,9 +107,9 @@
       <Project>{1AA9809B-38BE-3E22-907D-E1CCB3695030}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\main2.vcxproj">
-      <Project>{DF54BD89-81BD-39EA-8774-4E1E2705C3AD}</Project>
-      <Name>main2</Name>
+    <ProjectReference Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\main.vcxproj">
+      <Project>{9D3F7EF9-D26E-384A-80A4-5FCC7A40EB0C}</Project>
+      <Name>main</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
