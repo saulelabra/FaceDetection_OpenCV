@@ -6,6 +6,8 @@
 #include <iostream>
 #include <string.h>
 #include <vector>
+#include <windows.h>
+#include <tuple>
 
 using namespace std;
 using namespace cv;

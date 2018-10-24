@@ -18,63 +18,56 @@ int main()
   settings.classifiers_location = pathsToClassif;
   settings.scaleFact = 1.1;
   settings.validNeighbors = 2;
-  settings.minWidth = 10;
-  settings.maxWidth = 10;
+  settings.minWidth = 40;
+  settings.maxWidth = 40;
 
   //Initialize detector
   FaceDetector_opt detector(settings);
 
-  //Configure video file
+  /*video.open(0);
 
-  /*video.open("sam.mp4");
+  detector.detect_faces_cam(&video);
 
-  while(true)
+  cout << "Detectó caras en video" << endl;
+  */
+
+  /*vector<vector<Rect>> prueba = detector.detect_faces_video(&video);
+
+  cout << "Regresó vector" << endl;
+  cout << "Tamaño del vector: " << prueba.size() << endl;
+
+  for(int i=0; i<prueba.size(); i++)
   {
-    Mat frame;
-
-    video >> frame;
-
-
-    if(frame.empty())
+    for(int j=0; j<prueba[i].size(); j++)
     {
-      cout << "No se cargaron los frames" << endl;
-      break;
-    }
-
-    imshow("Frame", frame);
-
-    if(waitKey(27) >= 0)
-    {
-      cout << "Escape pressed" << endl;
-      break;
+      cout << "X: " << prueba[i][j].x << "Y: " << prueba[i][j].y << endl;
     }
   }
   */
 
-  video.open("Sam.mp4");
-  //vector<vector<Rect>> prueba;
 
-  //prueba = detector.detect_faces_video(&video);
-
-  //cout << "Devolvió el vector" << endl;
-  detector.detect_faces_video_show(&video);
-
-  /*
   //Ask the data in CLI
   cout << "Input image file name (with extension)" << endl;
   cout << "Harold.jpg" << endl;
-  imgName = "Harold.jpg";
+  //imgName = "Harold.jpg";
+  imgName = "personas_negocios.png";
 
   //Input the image as pointer to Mat
   img = imread(imgName, 1);
   cout << "Se guardó la imagen en el Mat (main)" << endl;
 
-  vector<Rect> detected_faces = detector.detect_faces(&img);
+  //vector<Rect> faces = detector.detect_faces(&img);
+
+  detector.detect_show_faces_show(&img);
+
+  //Rect face = detector.detect_single_face(&img);
+
+  //vector<Rect> detected_faces = detector.detect_faces(&img);
 
   cout << "Se detectaron las caras y se regresó el vector" << endl;
 
-  detector.detect_faces_show(&img);
-  */
+  //detector.detect_faces_show(&img);
+
 
   return 0;
 };
