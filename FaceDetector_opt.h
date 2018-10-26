@@ -28,7 +28,7 @@ public:
     }
   }
 
-  Rect single_face(vector<Rect> faces)
+  Rect get_largest_face(vector<Rect> faces)
   {
     int largest_size, largest_size_i;
     largest_size_i = 0;
@@ -41,14 +41,6 @@ public:
         largest_size = faces[i].width;
         largest_size_i = i;
       }
-    }
-
-    cout << "Largest: " << largest_size << "\t Index: " << largest_size_i << endl;
-    //sort(faces.begin(), faces.end());
-
-    for(int i=0; i<faces.size(); i++)
-    {
-        cout << "X: " << faces[i].x << " Y: " << faces[i].y << endl;
     }
 
     return faces[largest_size_i];
@@ -78,39 +70,34 @@ public:
     return faces;
   }
 
-  Rect detect_show_single_face(Mat *img)
+  vector<Rect> detect_faces(Mat *img, int classifier_index)
   {
-    Point pt1, pt2;
-    vector<Rect> faces = detect_faces(img);
-    vector<int> rectColor;
-    Rect face = single_face(faces);
+    Mat imgGray;//grayscale conversion
+    Ptr<CLAHE> clahe;//Contrast Limit Adaptative Histogram Equalization
+    vector<Rect> faces;
 
-    rectColor.push_back(255);
-    rectColor.push_back(0);
-    rectColor.push_back(0);
+    clahe = createCLAHE();
+    clahe->setClipLimit(4);
 
-    pt1.x = face.x;
-    pt1.y = face.y;
-    pt2.x = face.x + face.width;
-    pt2.y = face.y + face.height;
+    if(!img->empty() && !classifiers.empty())
+    {
+      //Converting into gray scale and improving contrast
+      cvtColor(*img, imgGray, CV_BGR2GRAY);
+      clahe->apply(imgGray, imgGray);
 
-    cout << "width: " << face.width << endl;
+      //Detecting faces
+      classifiers[classifier_index].detectMultiScale(imgGray, faces, scaleFact, validNeighbors, 0|CV_HAAR_SCALE_IMAGE, Size(minWidth, maxWidth));
+    }else{
+      cout << "Image or classifier not found" << endl;
+    }
 
-    rectangle(*img, pt1, pt2, Scalar(rectColor[1], rectColor[0], rectColor[2]));
-
-    //Display window with image
-    namedWindow("Face Detection", WINDOW_AUTOSIZE);//Generating window
-    imshow("Face Detection", *img);//Showing image
-
-    waitKey(0);
-    return face;
+    return faces;
   }
 
-  void detect_faces_show(Mat *img)
+  void show_faces(Mat *img, vector<Rect> faces)
   {
     Point pt1, pt2;
     vector <int> rectColor;
-    vector <Rect> faces = detect_faces(img);
 
     rectColor.push_back(255);
     rectColor.push_back(0);
@@ -127,62 +114,16 @@ public:
       rectangle(*img, pt1, pt2, Scalar(rectColor[0], rectColor[1], rectColor[2]));
     }
 
-    //tmp
-    Rect prueba = single_face(faces);
-
-    pt1.x = prueba.x;
-    pt1.y = prueba.y;
-    pt2.x = prueba.x + prueba.width;
-    pt2.y = prueba.y + prueba.height;
-
-    cout << "width: " << prueba.width << endl;
-
-    rectangle(*img, pt1, pt2, Scalar(rectColor[1], rectColor[0], rectColor[2]));
 
     //Display window with image
     namedWindow("Face Detection", WINDOW_AUTOSIZE);//Generating window
     imshow("Face Detection", *img);//Showing image
 
-    waitKey(0);
+    return;
   }
 
-  vector<vector<Rect>> detect_faces_video(VideoCapture * capture)
+  void show_faces(Mat *img, vector<Rect> detected_faces, vector<Rect> real_faces)
   {
-    vector<vector<Rect>> faces_video;
-
-    //cout << "Se declaró el vector (detect_faces_video)" << endl;
-
-    if(!capture->isOpened())
-    {
-      cout << "Error: The file/stream couldn't open" << endl;
-    }else{
-      while(true)
-      {
-        //cout << "Entra al while" << endl;
-        Mat frame;
-
-        *capture >> frame;
-
-        //cout << "guarda el frame" << endl;
-
-        if(frame.empty())
-        {
-          cout << "Frames couldn't load" << endl;
-          break;
-        }else{
-          resize(frame, frame, Size(), 0.50, 0.50);
-          faces_video.push_back(detect_faces(&frame));
-        }
-      }
-    }
-    return faces_video;
-  }
-
-  void detect_faces_video_show(VideoCapture * capture)
-  {
-    Mat frame;
-    vector<Rect> faces;
-
     Point pt1, pt2;
     vector <int> rectColor;
 
@@ -190,44 +131,39 @@ public:
     rectColor.push_back(0);
     rectColor.push_back(0);
 
-    while(true)
+    //Draw detected faces
+    for(size_t i=0; i<detected_faces.size(); i++)
     {
-      *capture >> frame;
+      //Drawing rectangle on image
+      pt1.x = detected_faces[i].x;
+      pt1.y = detected_faces[i].y;
+      pt2.x = detected_faces[i].x + detected_faces[i].width;
+      pt2.y = detected_faces[i].y + detected_faces[i].height;
 
-      if(frame.empty())
-      {
-        cout << "Frames couldn't load" << endl;
-        break;
-      }else{
-        resize(frame, frame, Size(), 0.50, 0.50);
-
-        faces = detect_faces(&frame);
-
-        for(size_t i=0; i<faces.size(); i++)
-        {
-          //Drawing rectangle on image
-          pt1.x = faces[i].x;
-          pt1.y = faces[i].y;
-          pt2.x = faces[i].x + faces[i].width;
-          pt2.y = faces[i].y + faces[i].height;
-
-          rectangle(frame, pt1, pt2, Scalar(rectColor[0], rectColor[1], rectColor[2]));
-        }
-
-        //Display window with image
-        imshow("Face Detection", frame);//Showing image
-        waitKey(1);
-      }
+      rectangle(*img, pt1, pt2, Scalar(rectColor[0], rectColor[1], rectColor[2]));
     }
+
+    //Draw real faces (after discarding false positives)
+    for(size_t i=0; i<real_faces.size(); i++)
+    {
+      //Drawing rectangle on image
+      pt1.x = real_faces[i].x;
+      pt1.y = real_faces[i].y;
+      pt2.x = real_faces[i].x + real_faces[i].width;
+      pt2.y = real_faces[i].y + real_faces[i].height;
+
+      rectangle(*img, pt1, pt2, Scalar(rectColor[1], rectColor[0], rectColor[2]));
+    }
+
+    //Display window with image
+    namedWindow("Face Detection", WINDOW_AUTOSIZE);//Generating window
+    imshow("Face Detection", *img);//Showing image
+
+    return;
   }
 
-  tuple<Mat, Rect> detect_faces_cam(VideoCapture * capture)
+  void show_faces(Mat *img, vector<Rect> detected_faces, vector<Rect> real_faces, Rect largest_face)
   {
-    tuple<Mat, Rect> captured_face;
-
-    Mat frame;
-    vector<Rect> faces;
-
     Point pt1, pt2;
     vector <int> rectColor;
 
@@ -235,43 +171,89 @@ public:
     rectColor.push_back(0);
     rectColor.push_back(0);
 
-    while(true)
+    //Draw detected faces
+    for(size_t i=0; i<detected_faces.size(); i++)
     {
-      *capture >> frame;
+      //Drawing rectangle on image
+      pt1.x = detected_faces[i].x;
+      pt1.y = detected_faces[i].y;
+      pt2.x = detected_faces[i].x + detected_faces[i].width;
+      pt2.y = detected_faces[i].y + detected_faces[i].height;
 
-      if(frame.empty())
+      rectangle(*img, pt1, pt2, Scalar(rectColor[0], rectColor[1], rectColor[2]));
+    }
+
+    //Draw real faces (after discarding false positives)
+    for(size_t i=0; i<real_faces.size(); i++)
+    {
+      //Drawing rectangle on image
+      pt1.x = real_faces[i].x;
+      pt1.y = real_faces[i].y;
+      pt2.x = real_faces[i].x + real_faces[i].width;
+      pt2.y = real_faces[i].y + real_faces[i].height;
+
+      rectangle(*img, pt1, pt2, Scalar(rectColor[1], rectColor[0], rectColor[2]));
+    }
+
+    //Draw largest face
+    pt1.x = largest_face.x;
+    pt1.y = largest_face.y;
+    pt2.x = largest_face.x + largest_face.width;
+    pt2.y = largest_face.y + largest_face.height;
+
+    rectangle(*img, pt1, pt2, Scalar(rectColor[1], rectColor[2], rectColor[0]));
+
+    //Display window with image
+    namedWindow("Face Detection", WINDOW_AUTOSIZE);//Generating window
+    imshow("Face Detection", *img);//Showing image
+
+    return;
+  }
+
+  vector<Rect> ignore_false_positives(Mat * img, vector<Rect> original_det_faces)
+  {
+    vector<Rect> result;
+    vector<vector<Rect>> additional_detections;
+    vector<int> coincidence_counter;
+
+    //Initialize coincidences counter with 0
+    coincidence_counter.resize(original_det_faces.size(), 0);
+
+    //Iterate for each detection type
+    for(int i=1; i<classifiers.size(); i++)
+    {
+      //Detect with aditional classifiers
+      additional_detections.push_back(detect_faces(img, i));
+
+      //iterate for each face in the current detection type
+      for(int j=0; j<additional_detections[i-1].size(); j++)
       {
-        cout << "Frames couldn't load" << endl;
-        break;
-      }else{
-        resize(frame, frame, Size(), 0.50, 0.50);
-
-        faces = detect_faces(&frame);
-
-        for(size_t i=0; i<faces.size(); i++)
+        //Iterate for each face of the original detection type
+        for(int k=0; k<original_det_faces.size(); k++)
         {
-          //Drawing rectangle on image
-          pt1.x = faces[i].x;
-          pt1.y = faces[i].y;
-          pt2.x = faces[i].x + faces[i].width;
-          pt2.y = faces[i].y + faces[i].height;
-
-          rectangle(frame, pt1, pt2, Scalar(rectColor[0], rectColor[1], rectColor[2]));
-        }
-
-        //Display window with image
-        imshow("Face Detection", frame);//Showing image
-
-        waitKey(1);
-
-        if(GetAsyncKeyState( VK_ESCAPE ) & 0x8000)
-          break;
-
-        if(GetAsyncKeyState( VK_SPACE ) & 0x8000)
-        {
-          return captured_face;
+          if((additional_detections[i-1][j].x >= (original_det_faces[k].x * 0.80)) && (additional_detections[i-1][j].x <= (original_det_faces[k].x * 1.20)))
+          {
+            if((additional_detections[i-1][j].y >= (original_det_faces[k].y * 0.80)) && (additional_detections[i-1][j].y <= (original_det_faces[k].y * 1.20)))
+            {
+              coincidence_counter[k]++;
+            }
+          }
         }
       }
     }
+
+    for(int i=0; i<original_det_faces.size(); i++)
+    {
+      if(coincidence_counter[i] >= 1)
+      {
+        result.push_back(original_det_faces[i]);
+      }
+    }
+    return result;
+  }
+
+  ~ FaceDetector_opt()
+  {
+
   }
 };
