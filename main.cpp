@@ -4,13 +4,14 @@
 int main()
 {
   //Variable declaration
-  int option;
-  parameters_FacDet settings;
-  vector <string> pathsToClassif;
+  int option;//for menu
+  parameters_FacDet settings;//for detector initialization
+  vector <string> pathsToClassif;//
 
   //Image file
   string fileName;
   Mat img;
+  //vectors used to display detected faces
   vector<Rect> detected_faces;
   vector<Rect> real_faces;
   vector<Rect> largest_face;
@@ -32,8 +33,8 @@ int main()
   settings.classifiers_location = pathsToClassif;
   settings.scaleFact = 1.2;
   settings.validNeighbors = 1;
-  settings.minWidth = 60;
-  settings.maxWidth = 60;
+  settings.minWidth = 30;
+  settings.maxWidth = 30;
 
   //Intitialize detector with settings
   FaceDetector_opt detector(settings);
@@ -57,37 +58,46 @@ int main()
         cout << "Introduzca el nombre de la imagen (con extension)" << endl;
         cin >> fileName;
 
+        //read image
         img = imread(fileName, 1);
-        detected_faces = detector.detect_faces(&img);
-        //detector.show_faces(&img, detected_faces);
 
-        real_faces = detector.ignore_false_positives(&img, detected_faces);
-        cout << "Devolvió vector sin falsos positivos" << endl;
+        if(!img.empty())
+        {
+          //detect faces and ignore false positives
+          detected_faces = detector.detect_faces(&img);
+          real_faces = detector.ignore_false_positives(&img, detected_faces, 2);
 
-        largest_face[0] = detector.get_largest_face(real_faces);
+          //show faces after detection
+          detector.show_faces(&img, detected_faces, real_faces);
+          waitKey(0);
+          destroyAllWindows();
 
-        //detector.show_faces(&img, detected_faces, real_faces, largest_face[0]);
-        //waitKey(0);
+          //Select additional faces manualy
+          do{
+            cout << "¿Desea agregar un rostro no reconocido?" << endl;
+            cout << "(1) Si" << endl;
+            cout << "(2) No" << endl;
+            cin >> option;
 
-        detector.show_faces(&img, largest_face);
-        waitKey(0);
+            //User enters into face selection mode
+            if(option == 1)
+            {
+              real_faces.push_back(detector.select_additional_face(&img));
+              destroyAllWindows();
+            }
+          }while(option != 2);
 
-        /*
-        //temporal
-        detected_faces = detector.detect_faces(&img, 1);
-        //eliminar FP, seleccionar uno, y ese rostro meterlo a un vector de uno
-        detector.show_faces(&img, detected_faces);
+          destroyAllWindows();
 
-        //temporal
-        detected_faces = detector.detect_faces(&img, 2);
-        //eliminar FP, seleccionar uno, y ese rostro meterlo a un vector de uno
-        detector.show_faces(&img, detected_faces);
+          //detect the largest face
+          largest_face[0] = detector.get_largest_face(real_faces);
+          detector.show_faces(&img, detected_faces, real_faces, largest_face[0]);
 
-        //temporal
-        detected_faces = detector.detect_faces(&img, 3);
-        //eliminar FP, seleccionar uno, y ese rostro meterlo a un vector de uno
-        detector.show_faces(&img, detected_faces);
-        */
+          waitKey(0);
+          destroyAllWindows();
+        }else{
+          cout << "No se pudo leer la imagen" << endl;
+        }
 
         break;
       case 2: //Detect from video file
@@ -95,13 +105,14 @@ int main()
         cin >> fileName;
         video.open(fileName);
 
-        //If vide isn't openc
+        //If vide isn't open
         if(!video.isOpened())
         {
             cout<<"Error: The file/stream couldn't open"<<endl;
         }
         else
         {
+            //obtain frames from video
             while(true)
             {
               Mat frame;
@@ -112,11 +123,11 @@ int main()
               }
               else
               {
-                resize(frame, frame, Size(), 0.30, 0.30);
+                //image detection for each frame
                 temporal = detector.detect_faces(&frame);
-                real_faces = detector.ignore_false_positives(&frame, temporal);
+                real_faces = detector.ignore_false_positives(&frame, temporal, 3);
                 largest_face[0] = detector.get_largest_face(real_faces);
-                detector.show_faces(&frame, largest_face);
+                detector.show_faces(&frame, temporal, real_faces, largest_face[0]);
                 waitKey(1);
 
                 if(GetAsyncKeyState( VK_ESCAPE ) & 0x8000)
@@ -131,34 +142,36 @@ int main()
       cout << "Usando la cámara del dispositivo" << endl;
       video.open(0);
 
-      //If vide isn't openc
+      //If video isn't open
       if(!video.isOpened())
       {
           cout<<"Error: The file/stream couldn't open"<<endl;
       }
       else
       {
-          while(true)
+        while(true)
+        {
+          Mat frame;
+          video >> frame;
+          if(frame.empty())
           {
-            Mat frame;
-            video >> frame;
-            if(frame.empty())
-            {
-              break;
-            }
-            else
-            {
-              resize(frame, frame, Size(), 0.50, 0.50);
-              temporal = detector.detect_faces(&frame);
-              faces_video.push_back(temporal);
-              detector.show_faces(&frame,temporal);
-              waitKey(1);
-              if(GetAsyncKeyState( VK_ESCAPE ) & 0x8000)
-                break;
-            }
+            break;
           }
-          destroyAllWindows();
-          video.release();
+          else
+          {
+            //detect faces for each frame
+            temporal = detector.detect_faces(&frame);
+            real_faces = detector.ignore_false_positives(&frame, temporal, 2);
+            largest_face[0] = detector.get_largest_face(real_faces);
+            detector.show_faces(&frame, temporal, real_faces, largest_face[0]);
+            waitKey(1);
+
+            if(GetAsyncKeyState( VK_ESCAPE ) & 0x8000)
+              break;
+          }
+        }
+        destroyAllWindows();
+        video.release();
       }
         break;
     }

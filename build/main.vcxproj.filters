@@ -4,6 +4,9 @@
     <ClCompile Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\FaceDetector_opt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\CMakeLists.txt" />

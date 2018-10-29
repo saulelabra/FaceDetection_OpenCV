@@ -309,6 +309,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\main.cpp" />
+    <ClCompile Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\FaceDetector_opt.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\quiqu\Downloads\OpenCV_pruebas\imgLoadnDisp\build\ZERO_CHECK.vcxproj">
