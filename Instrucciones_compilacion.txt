@@ -1,3 +1,5 @@
+cd Downloads\OpenCV_pruebas\imgLoadnDisp\build
+
 Compile:
 
 	cmake --build . --config Release
@@ -6,3 +8,13 @@ Execute:
 	
 	cd ..
 	.\build\Release\main.exe
+
+cd Downloads\OpenCV_pruebas\imgLoadnDisp\build
+cmake --build . --config Release
+cd ..
+.\build\Release\main.exe
+
+cd build
+cmake --build . --config Release
+cd ..
+.\build\Release\main.exe

@@ -4,17 +4,11 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/tracking.hpp>
-#include <iostream>
 #include <string.h>
 #include <vector>
-#include <windows.h>
-#include <tuple>
-
-using namespace std;
-using namespace cv;
 
 typedef struct parameters_FacDet{
-  vector <string> classifiers_location;
+  std::vector <std::string> classifiers_location;
 
   //detectMultiScale
   double scaleFact;

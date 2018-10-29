@@ -1,5 +1,8 @@
 #include "FaceDetector_opt.h"
 
+using namespace cv;
+using namespace std;
+
 FaceDetector_opt::FaceDetector_opt(parameters_FacDet input)
 {
   //pass data from struct

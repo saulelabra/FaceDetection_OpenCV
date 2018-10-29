@@ -3,7 +3,7 @@
 class FaceDetector_opt
 {
 private:
-  vector <CascadeClassifier> classifiers;
+  std::vector <cv::CascadeClassifier> classifiers;
   double scaleFact;
   int validNeighbors;
   int minWidth;
@@ -12,21 +12,21 @@ private:
 public:
   FaceDetector_opt(parameters_FacDet input);
 
-  Rect get_largest_face(vector<Rect> faces);
+  cv::Rect get_largest_face(std::vector<cv::Rect> faces);
 
-  vector<Rect> detect_faces(Mat *img);
+  std::vector<cv::Rect> detect_faces(cv::Mat *img);
 
-  vector<Rect> detect_faces(Mat *img, int classifier_index);
+  std::vector<cv::Rect> detect_faces(cv::Mat *img, int classifier_index);
 
-  void show_faces(Mat *img, vector<Rect> faces);
+  void show_faces(cv::Mat *img, std::vector<cv::Rect> faces);
 
-  void show_faces(Mat *img, vector<Rect> detected_faces, vector<Rect> real_faces);
+  void show_faces(cv::Mat *img, std::vector<cv::Rect> detected_faces, std::vector<cv::Rect> real_faces);
 
-  void show_faces(Mat *img, vector<Rect> detected_faces, vector<Rect> real_faces, Rect largest_face);
+  void show_faces(cv::Mat *img, std::vector<cv::Rect> detected_faces, std::vector<cv::Rect> real_faces, cv::Rect largest_face);
 
-  vector<Rect> ignore_false_positives(Mat * img, vector<Rect> original_det_faces, int tolerance);
+  std::vector<cv::Rect> ignore_false_positives(cv::Mat * img, std::vector<cv::Rect> original_det_faces, int tolerance);
 
-  Rect select_additional_face(Mat * img);
+  cv::Rect select_additional_face(cv::Mat * img);
 
   ~ FaceDetector_opt();
 };

@@ -1,5 +1,10 @@
 #include "FaceDetector_opt.h"
 #include <windows.h>
+#include <vector>
+#include <iostream>
+
+using namespace std;
+using namespace cv;
 
 int main()
 {
