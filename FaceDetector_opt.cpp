@@ -3,6 +3,18 @@
 using namespace cv;
 using namespace std;
 
+FaceDetector_opt::FaceDetector_opt() // Default constructor: doesn't load any classifier
+{
+  CascadeClassifier tmp;
+  tmp.load("haarcascade_frontalface_default.xml");
+
+  classifiers.push_back(tmp);
+  scaleFact = 1.2;
+  validNeighbors = 1;
+  minWidth = 30;
+  maxWidth = 30;
+}
+
 FaceDetector_opt::FaceDetector_opt(parameters_FacDet input)
 {
   //pass data from struct

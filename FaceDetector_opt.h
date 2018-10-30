@@ -10,6 +10,8 @@ private:
   int maxWidth;
 
 public:
+  FaceDetector_opt();
+
   FaceDetector_opt(parameters_FacDet input);
 
   cv::Rect get_largest_face(std::vector<cv::Rect> faces);
